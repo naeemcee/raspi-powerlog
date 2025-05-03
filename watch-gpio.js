@@ -91,7 +91,7 @@ async function connectDb () {
   mongoose.connect(process.env.DB_STRING_DEV)
     .then(() => {
       console.log(`connected to database`)
-    }).catch(err => {
+    }).catch((err) => {
       console.log(err);
     })
 }
