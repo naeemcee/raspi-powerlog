@@ -87,6 +87,7 @@ process.on('SIGINT', () => {
 
 
 async function connectDb () {
+  mongoose.set('strictQuery', false);
   mongoose.connect(process.env.DB_STRING_DEV)
     .then(() => {
       console.log(`connected to database`)
