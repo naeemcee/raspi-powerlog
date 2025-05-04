@@ -53,6 +53,7 @@ const logToDb = async (timestamp, event) => {
 }
 
 connectDb()
+// logToDb(dbDate(), 'ON')
 
 console.log(`App re-start GPIO state: ${state}, ${text[state]} (at ${customDate()})`)
 updateFile(`App re-started. Status: ${text[state]}`);
